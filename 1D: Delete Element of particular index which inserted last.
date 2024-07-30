@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr1[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr1[i]=sc.nextInt();
+        }
+        int SpecificPosition=sc.nextInt();
+      SpecificPosition-=1;
+        System.out.println("Array after deletion is");
+         for(int i=0;i<n;i++){
+             if(arr1[i]!=arr1[SpecificPosition]){
+                 System.out.println(arr1[i]);
+             }
+        }
+    }
+}
